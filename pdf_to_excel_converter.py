@@ -18,7 +18,7 @@ def convert_pdf_to_excel():
     excel_path = os.path.splitext(pdf_path)[0] + ".xlsx"
     try:
         pdf_to_excel_tabula(pdf_path, excel_path)
-        messagebox.showinfo("Success", f"File converted successfully!\nSaved at: {excel_path}")
+        messagebox.showinfo("Success", f"File converted successfully!\nConverted file saved at: {excel_path}")
     except Exception as e:
         messagebox.showerror("Error", f"An error occurred: {str(e)}")
 
